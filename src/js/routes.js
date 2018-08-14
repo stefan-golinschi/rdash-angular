@@ -15,9 +15,13 @@ angular.module('RDash').config(['$stateProvider', '$urlRouterProvider',
                 url: '/',
                 templateUrl: 'templates/dashboard.html'
             })
-            .state('tables', {
-                url: '/tables',
-                templateUrl: 'templates/tables.html'
+            .state('network', {
+                url: '/network',
+                templateUrl: 'templates/network.html'
+            })
+            .state('openvpn', {
+                url: '/openvpn',
+                templateUrl: 'templates/openvpn.html'
             });
     }
 ]);

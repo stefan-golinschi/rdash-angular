@@ -1,0 +1,64 @@
+<div class="row" data-ng-controller="NetworkCtrl">
+    <div class="col-lg-6">
+        <rd-widget>
+            <rd-widget-header icon="fa-tasks" title="OpenVPN">
+                <a href="#">Manage</a>
+            </rd-widget-header>
+            <rd-widget-body classes="medium no-padding">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <td>Interface name</td>
+                        <td>Physical address</td>
+                        <td>IP address</td>
+                        <td>Link state</td>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>asd</td>
+                            <td>asd</td>
+                            <td>asd</td>
+                            <td>asd</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </rd-widget-body>
+            <rd-widget-footer>
+                <ul class="pagination pagination-sm pull-right">
+                    <li><a>&laquo;</a></li>
+                    <li><a>&raquo;</a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </rd-widget-footer>
+        </rd-widget>
+    </div>
+    <div class="col-lg-6">
+        <rd-widget>
+            <rd-widget-header icon="fa-tasks" title="OpenVPN LOG">
+                <a href="#">Manage</a>
+            </rd-widget-header>
+            <rd-widget-body classes="medium no-padding">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <tbody data-ng-repeat="route in routes">
+                        <tr>
+                            <td>{{route.details}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </rd-widget-body>
+            <rd-widget-footer>
+                <ul class="pagination pagination-sm pull-right">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </rd-widget-footer>
+        </rd-widget>
+    </div>
+</div>
